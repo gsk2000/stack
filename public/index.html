@@ -1,0 +1,48 @@
+<!-- public/views/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+	
+	    <!-- Custom Fonts -->
+    <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <base href="/">
+
+    <title>WhatsApp Chat Analytics</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/css/sb-admin-2.css"> <!-- custom styles -->
+
+    <!-- JS -->
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular-route/angular-route.min.js"></script>
+
+    <!-- plotting - d3 -->
+    <script src="libs/d3/d3.min.js"></script>
+    <script src="libs/dimple/dist/dimple.v2.1.6.min.js"></script>
+    <script src="libs/angular-dimple/dist/angular-dimple.js"></script>
+
+    <!-- ANGULAR CUSTOM -->
+    <script src="js/controllers/LandingPageCtrl.js"></script>
+    <script src="js/controllers/PlotsPageCtrl.js"></script>
+    <!-- <script src="js/services/PlotPageServices.js"></script> -->
+    <script src="js/appRoutes.js"></script>
+    <script src="js/app.js"></script>
+
+
+
+</head>
+<body ng-app="whatappChat" ng-controller="LandingPageController">
+<div class="container">
+	 <div class="row">
+            <div class="col-lg-12">
+                    <h1 class="page-header">PCJ96 Chat Dashboard</h1>
+             </div>
+                <!-- /.col-lg-12 -->
+     </div>
+    <!-- ANGULAR DYNAMIC CONTENT -->
+    <div ng-view></div>
+</div>
+</body>
+</html>
